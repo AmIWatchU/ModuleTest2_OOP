@@ -5,7 +5,7 @@ VisualStudioVersion = 16.0.31205.134
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModuleTest2_OOP", "ModuleTest2_OOP\ModuleTest2_OOP.csproj", "{411E59CC-96BD-4909-88F6-176365C71DFC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tets", "Tets\Tets.csproj", "{0DC85571-B9AF-4B25-AB18-0A93B14199E5}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ver.2", "Tets\ver.2.csproj", "{0DC85571-B9AF-4B25-AB18-0A93B14199E5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

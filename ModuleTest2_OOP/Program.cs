@@ -29,44 +29,110 @@ namespace ModuleTest2_OOP
                 this.xy1 = xy1;
                 this.color = color;
             }
-            
+
+        public void DisplayInfo()
+        {
+            if (string.IsNullOrEmpty(color))
+            {
+                return;
+            }
+            Console.WriteLine($"First coordinate: {xy} Second coordinate: {xy1} Color: {color}");
         }
+
+    }
       
         struct Window
         {
             public string Title;
             public string[] Menu;
-        } 
+        public Window(string Title, string[] Menu)
+        {
+            this.Title = Title;
+            this.Menu = Menu;         
+        }
+        public void DisplayInfo()
+        {
+            if (Menu == null || string.IsNullOrEmpty(Title))
+            {
+                return;
+            }
+            
+            Console.Write($"Title: {Title} Menu: ");
+            foreach (var a in Menu)
+            {
+                Console.Write(a + " ");
+            }
+        }
+    } 
+
+
+   
+
+    struct StructList
+    {
+        
+        public Rectangle[] Rectangles;
+        public Window[] Windows;
+        private int RectCounter;
+        private int WindowCounter;
+
+        public StructList(int rectangles, int windows)
+        {
+            Rectangles = new Rectangle[rectangles];
+            Windows = new Window[windows];
+            RectCounter = 0;
+            WindowCounter = 0;
+        }
+
+        public void AddRect(Rectangle rect) 
+        {
+            Rectangles[RectCounter++] = rect;
+        }
+        public void AddWindow(Window wind) 
+        {
+            Windows[WindowCounter++] = wind;
+        }
+    }
 
         class Program
         {
             static void Main(string[] args)
             {
+                StructList sl = new StructList(2, 2);
                 Rectangle Rectangle1;
                 Rectangle1.xy = 14;
                 Rectangle1.xy1 = 34;
                 Rectangle1.color = "Black";
+                sl.AddRect(Rectangle1);
 
-                Window window;
+            Rectangle Rectangle2;
+            Rectangle2.xy = 15;
+            Rectangle2.xy1 = 23;
+            Rectangle2.color = "Red";
+            sl.AddRect(Rectangle2);
+
+            Window window;
                 window.Title = "ModuleTest";
                 window.Menu = new string[] { "File", "Edit", "Git", "Project", "Build", "Debug", "Test", "Analyze" };
+                sl.AddWindow(window);
+            for (int i = 0; i < sl.Rectangles.Length; i++)
+            {
+                if (sl.Rectangles[i].color == "Black")
+                {
+                    sl.Rectangles[i].DisplayInfo();
+                }
+                   
+            }
+            for (int i = 0; i < sl.Windows.Length; i++)
+            {
+                sl.Windows[i].DisplayInfo();
+            }
+            
+            Console.ReadKey();
+
+                
             }
         }
-   
-
-    struct List
-    {
-        //i=1;
-        //public Rectangle[] Rectangles;
-        //Rectangles[i] = new Rectangles(i, Rectangle.Text, )
-        ArrayList List = new ArrayList();
-        
-
-
-
-    }
-
-
 }   
  
 
