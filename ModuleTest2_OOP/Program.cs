@@ -31,6 +31,13 @@ namespace ModuleTest2_OOP
             }
             
         }
+      
+        struct Window
+        {
+            public string Title;
+            public string[] Menu;
+        } 
+
         class Program
         {
             static void Main(string[] args)
@@ -39,31 +46,28 @@ namespace ModuleTest2_OOP
                 Rectangle1.xy = 14;
                 Rectangle1.xy1 = 34;
                 Rectangle1.color = "Black";
+
+                Window window;
+                window.Title = "ModuleTest";
+                window.Menu = new string[] { "File", "Edit", "Git", "Project", "Build", "Debug", "Test", "Analyze" };
             }
         }
-
-        struct Window
-        {
-            public string Title;
-            public string[] Menu;
-        }
-    class Program1
-    {
-        static void Main(string[] args)
-        {
-            Window window;
-            window.Title = "ModuleTest";
-            window.Menu = new string[] {"File", "Edit", "Git", "Project", "Build", "Debug"};            
-        }
-    }
+   
 
     struct List
-        {
+    {
+        //i=1;
+        //public Rectangle[] Rectangles;
+        //Rectangles[i] = new Rectangles(i, Rectangle.Text, )
+        ArrayList List = new ArrayList();
+        
 
-        }
 
 
-    }   
+    }
+
+
+}   
  
 
     
