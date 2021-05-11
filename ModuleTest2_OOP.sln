@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31205.134
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModuleTest2_OOP", "ModuleTest2_OOP\ModuleTest2_OOP.csproj", "{411E59CC-96BD-4909-88F6-176365C71DFC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tets", "Tets\Tets.csproj", "{0DC85571-B9AF-4B25-AB18-0A93B14199E5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{411E59CC-96BD-4909-88F6-176365C71DFC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{411E59CC-96BD-4909-88F6-176365C71DFC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{411E59CC-96BD-4909-88F6-176365C71DFC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{411E59CC-96BD-4909-88F6-176365C71DFC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0DC85571-B9AF-4B25-AB18-0A93B14199E5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0DC85571-B9AF-4B25-AB18-0A93B14199E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0DC85571-B9AF-4B25-AB18-0A93B14199E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0DC85571-B9AF-4B25-AB18-0A93B14199E5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F0EFD84E-D358-4690-BCB5-C724CCA5F2ED}
+	EndGlobalSection
+EndGlobal
